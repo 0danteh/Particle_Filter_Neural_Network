@@ -17,9 +17,23 @@ This repository contains a Python implementation of a Particle Filter for Nonlin
 ```
 pip install numpy scipy matplotlib
 ```
-## Usage
 
-The PFNN class can be used to estimate the state of a nonlinear system. The dataset need to be imported.
+## Functionality
+
+The Particle Filter Neural Network (PFNN) algorithm you've implemented combines particle filtering and neural networks to estimate the state of a dynamic system. It operates through several key steps:
+
+1. **Initialization**: Sets up the state space and weights for the particle filter, representing possible states and their likelihoods.
+
+2. **Update Method**: Updates the state space and weights based on observations and control inputs. This involves applying the state transition model to update the state space and the observation model to update the weights, reflecting the likelihood of each state.
+
+3. **Evaluation Method**: Provides a quantitative measure of the model's performance by calculating the Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) between the predicted and actual observations.
+
+4. **Plotting Method**: Offers a qualitative measure of the model's performance by visualizing the predicted vs. actual values.
+
+5. **Integration of Particle Filtering and Neural Networks**: Integrates particle filtering and neural networks to estimate the state of the system. The particle filter updates the state space and weights based on the observations and control inputs, while the neural network models the system's dynamics, including the state transition and observation models.
+
+This integration allows the PFNN algorithm to adapt to the complexities of the system being modeled, providing a robust and flexible approach to state estimation. The effectiveness of the PFNN algorithm depends on the accuracy of the state transition and observation models, as well as the appropriateness of the particle filter parameters.
+
 
 ## Class Methods
 
