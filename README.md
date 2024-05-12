@@ -20,7 +20,7 @@ pip install numpy scipy matplotlib
 
 ## Functionality
 
-The Particle Filter Neural Network (PFNN) algorithm you've implemented combines particle filtering and neural networks to estimate the state of a dynamic system. It operates through several key steps:
+The Particle Filter Neural Network (PFNN) algorithm I've implemented combines particle filtering and neural networks to estimate the state of a dynamic system. It operates through several key steps:
 
 1. **Initialization**: Sets up the state space and weights for the particle filter, representing possible states and their likelihoods.
 
